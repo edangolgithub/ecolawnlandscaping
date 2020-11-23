@@ -1,0 +1,69 @@
+<h1>Contact Us</h1>
+<p>Eco-Friendly Lawn and Landscaping, LLC<br />
+
+Phone: (571) 480-6180<br />
+
+
+Mailing Address: 4704 Korvett Dr., Woodbridge, VA 22193
+</p>
+<br />
+<hr size=1>
+<br />
+
+								
+<table align="left" valign="top" border=0 cellspacing=2 cellpadding=3 class="normal">
+    <form action="contact-us.php" method="post">
+
+    <tr>
+        <td>
+                Name : 
+        </td>
+        <td>	 
+          <input type="text" name="ContactName" value="<?echo $ContactName?>" size=40>
+      	</td>
+    </tr>
+    <tr>
+        <td >
+               Phone : 
+        </td>
+        <td>
+          <input type="text" name="Phone" value="<?echo $Phone?>" size=40>
+      </td>
+    </tr>
+    <tr>
+        <td >
+                Email : <font color="red">*</font>
+        </td>
+        <td>
+        	<input type="text" name="ContactEmail" value="<?echo $ContactEmail?>" size=40>
+      	</td>
+    </tr>
+    
+	<tr>
+        <td valign="top">
+                Message : <font color="red">*</font>
+        </td>
+        <td>
+        	<textarea name="ContactMessage" rows="5" cols="40"><?echo $ContactMessage?></textarea>
+        </td>
+    </tr>
+    <tr>
+    	<td valign="top">
+    		Security Code : <font color="red">*</font>
+    	</td>
+        <td>
+         	<img src="functions/davinchiCode.php" vspace=0 alt="Security Image: please enter the text apears in this image."/>
+        	<br />Please type in the code you see in the image box above.<br />
+        	<input name="security_code" type="text" size="15" autocomplete="off"/><br>
+        	
+    	</td>
+	</tr> 
+    <tr>
+        <td colspan="2" align="center">
+        <input type="hidden" name="method" value="ContactUsOk">
+        <input type="submit" name="btnContact" Value="Send Message">            
+        </td>
+    </tr>
+    </form>
+    </table>
+<br><br>                                    

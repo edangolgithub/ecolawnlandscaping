@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" client="site" method="upgrade">
+	<name>Facebook Like Box</name>
+	<author>Sunento Wu</author>
+	<authorEmail>sunwu2007@gmail.com</authorEmail>
+	<authorUrl>http://vivociti.com</authorUrl>
+	<creationDate>2010-05-16</creationDate>
+	<copyright>Copyright (C) 2010 Sunento Wul. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL 2.0</license>
+	<version>2.2</version>
+	<description> 
+		<![CDATA[ 
+		Facebook Like Box is a social module that enables Facebook Page owners to attract and gain Likes from their own website. The Like Box enables users to: see how many users already like this page, and which of their friends like it too, read recent posts from the page and Like the page with one click, without needing to visit the page.<br/>
+	<p><a href="http://vivociti.com/component/option,com_vivo_info/task,supportus/Itemid,74/" target="_blank"><img src="http://vivociti.com/images/paypal-donate.gif" border="0"></a></p>
+<p>Visit <a href="http://vivociti.com" target="_blank">VivoCiti.com</a> for other great Joomla extensions, tutorials and articles.</p>
+<p>Follow Us: </p>
+<p style="text-align:left;"><a title="Join Us @Facebook" href="http://www.facebook.com/pages/VivoCiticom-Joomla-Wordpress-Blogger-Drupal-DNN-Community/119691288064264" target="_blank"><img src="http://vivociti.com/images/stories/facebook_16x16.png" border="0"></a>&nbsp;<a title="Follow Us @Twitter" href="http://twitter.com/vivociti" target="_blank"><img src="http://vivociti.com/images/stories/twitter_16x16.png" border="0"></a>&nbsp;<a title="Follow Us @Digg" href="http://digg.com/vivoc" target="_blank"><img src="http://vivociti.com/images/stories/digg_16x16.png" border="0"></a>&nbsp;<a title="Follow Us @StumbleUpon" href="http://www.stumbleupon.com/stumbler/vivociti/" target="_blank"><img src="http://vivociti.com/images/stories/stumbleupon_16x16.png" border="0"></a>&nbsp;<a title="Follow Our RSS" href="http://feeds2.feedburner.com/vivociti" target="_blank"><img src="http://vivociti.com/images/stories/feed_16x16.png" border="0"></a></p>
+<p style="text-align:left;">Our other Joomla Extension You may like :<br/>
+<br/><a title="Feedburner RSS Email Subscription" href="http://extensions.joomla.org/extensions/content-sharing/rss-syndicate/2815" target="_blank">Feedburner RSS Email Subscription</a>
+<br/><a title="Browse Your Website in 35 Languages" href="http://extensions.joomla.org/extensions/languages/automatic-translations/6097" target="_blank">Browse Your Website in 35 Languages</a>
+<br/><a title="Google Friend Connect" href="http://extensions.joomla.org/extensions/social-web/social-profiles/6990" target="_blank">Google Friend Connect</a>
+<br/><a title="Vivo Social Bookmark" href="http://extensions.joomla.org/extensions/social-web/social-bookmarking/4253" target="_blank">Vivo Social Bookmark</a>
+<br/><a title="Vivo 2D & 3D Chart" href="http://extensions.joomla.org/extensions/living/education-a-culture/graphs-and-charts/3687" target="_blank">Vivo 2D & 3D Chart</a>
+<br/><a title="Vivo Google Ajax Translator Plugin" href="http://extensions.joomla.org/extensions/languages/automatic-translations/4462" target="_blank">Vivo Google Ajax Translator</a>
+<br/><a title="Vivo Google Adsense Deluxe" href="http://extensions.joomla.org/extensions/ads-a-affiliates/google-ads/3384" target="_blank">Vivo Google Adsense Deluxe</a>
+<br/><a title="AdBrite Multi Display" href="http://extensions.joomla.org/extensions/ads-a-affiliates/affiliate-advertising/2856" target="_blank">AdBrite Multi Display</a>
+<br/><a title="Find Boo" href="http://extensions.joomla.org/extensions/social-web/multimedia-channels/video-channels/8613" target="_blank">Find Boo</a>
+<br/><a title="YouCMSAndBlog Tool" href="http://extensions.joomla.org/extensions/tools/editors-tools/3178" target="_blank">YouCMSAndBlog Tool</a>
+</p>
+		]]></description> 
+	<files>
+		<filename module="mod_facebook_like_box">mod_facebook_like_box.php</filename>
+	</files>
+	<config>
+	<fields name="params">
+		<fieldset name="basic">
+		<field name="pageURL" type="text" default="" label="Your Facebook Page URL" description="Your Facebook Page URL ( i.e.  http://www.facebook.com/pages/VivoCiticom-Joomla-Wordpress-Blogger-Drupal-DNN-Community/119691288064264 )" />
+		<field name="pageID" type="text" default="" label="Facebook Page ID (Leave this blank if you have Page URL)" description="The ID of the Facebook Page for this Like Box. You can leave this as blank if you have Fabebook Page URL filled up above" />
+		<field name="width" type="text" default="250" label="Width" description="The Width of the module in pixes" />
+		<field name="height" type="text" default="255" label="Height" description="The Height of the module in pixes" />
+		<field name="colorScheme" type="list" default="light" label="Color Scheme" description="The color scheme for the plugin. Options: 'light', 'dark'.">
+			<option value="light">light</option>
+			<option value="dark">dark</option>
+		</field>
+		<field name="showFaces" type="list" default="yes" label="Show Faces" description="Show profile photos in the plugin.">
+			<option value="yes">yes</option>
+			<option value="no">no</option>
+		</field>
+		<field name="connection" type="text" default="10" label="Connections" description="Show a sample of this many users who have liked this Page"/>
+		<field name="streams" type="list" default="yes" label="Streams" description="Show the profile stream for Public Profile">
+				<option value="yes">yes</option>
+				<option value="no">no</option>
+		</field>
+		<field name="header" type="list" default="yes" label="Header" description="Show the Find Us on Facebook bar at top. Only shown when either stream or connections are present">
+				<option value="yes">yes</option>
+				<option value="no">no</option>
+		</field>
+		<field name="layoutMode" type="list" default="iframe" label="Render Mode" description="Render layout mode using IFRAME or XFBML">
+			<option value="iframe">IFRAME</option>
+			<option value="xfbml">XFBML</option>
+		</field>
+		<field name="moduleBy" type="list" default="no" label="Support Our Development by contributing money (Visit: http://bit.ly/9Njzpo) ?" description="You can show your support to our development time by donating or by credit to us with small link to our website - Visit : http://bit.ly/9Njzpo">
+				<option value="yes">yes</option>
+				<option value="no">no</option>
+		</field>
+			</fieldset>
+	</fields>
+</config>
+</extension>

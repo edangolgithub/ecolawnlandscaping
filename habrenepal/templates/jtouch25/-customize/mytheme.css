@@ -1,0 +1,13 @@
+/*
+This use for over-ride default template css
+Please remove all content of this file before you start to add new css to.
+*/
+
+/* Left panel overlay effect; for site with header logo */
+.ui-panel-open{
+	top: 0;
+	bottom: 0;
+}
+.ui-page-active.ui-page-panel-open{
+	top: 0;
+}

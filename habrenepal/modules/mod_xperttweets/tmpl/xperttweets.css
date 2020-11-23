@@ -1,0 +1,64 @@
+/**
+ * @package Xpert Tweets
+ * @version 1.2
+ * @author ThemeXpert http://www.themexpert.com
+ * @copyright Copyright (C) 2010 - 2012 ThemeXpert
+ * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ *
+ */
+
+/*Global*/
+.clearfix:after{content: '';display: block;}
+#xt-wrap{border:1px solid #f5f5f5}
+#xt-wrap ul.xt-list{list-style-type: none;margin: 0;padding: 0}
+
+/*Follow us link*/
+.follow_us{ background: url('twitter.png') no-repeat 0 0; display: inline-block; margin: 15px 0 15px 15px; padding-left: 30px; line-height: 24px; }
+
+/*Profile*/
+.xt-profile{background: #f5f5f5;border-bottom: 1px solid #eee;padding:10px}
+.xt-profile-header{height: 100%;}
+    .xt-profile-header h4{font-size: 16px;line-height: 16px;margin:0 0 5px;padding: 0}
+    .xt-profile-header img{margin-right: 10px;float: left}
+    .xt-profile-header p{font-size: 11px;margin: 0}
+.xt-profile-info{margin-top: 10px;border-top: 1px solid #fff;}
+.xt-profile-info p{margin: 5px 0}
+
+#xt-wrap .xt-list{}
+    #xt-wrap .xt-list .odd,#xt-wrap .xt-list .even{background: transparent}
+    .xt-list li{border-bottom: 1px solid #f5f5f5}
+    .xt-list li .xt-inner-pad{padding:10px}
+    .xt-list .xt-avatar{float: left;margin-right: 10px}
+    .xt-list .xt-time,
+    .xt-list .xt-source{font-size: 12px;}
+
+/*Bubble Style*/
+.xt-bubble .xt-list .xt-tweet-wrap{padding: 10px;position: relative; background: #fff;border: 1px solid #ccc;box-shadow: 0 0 6px rgba(0, 0, 0, 0.2)}
+.xt-bubble .xt-list li{border: none}
+.xt-vertical.xt-bubble .xt-list .xt-tweet-wrap{margin-left: 60px;}
+
+.xt-bubble .xt-list .xt-tweet-wrap:before{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+}
+.xt-vertical.xt-bubble .xt-list .xt-tweet-wrap:before{
+    background: url(arrow-left.png) no-repeat;
+    left: -11px;
+    top: 10px;
+}
+.xt-bubble .xt-source{float: right;}
+    .xt-bubble .xt-source a{text-decoration: none;}
+
+/*Horizontal Layout*/
+.xt-horizontal .xt-list li{float: left}
+.xt-horizontal.xt-bubble .xt-list .xt-tweet-wrap{margin-top: 60px;}
+.xt-horizontal.xt-bubble .xt-list .xt-tweet-wrap:before{
+    background: url(arrow-top.png) no-repeat;
+    left: 10px;
+    top: -11px;
+}
+.xt-horizontal.xt-bubble .xt-time{position: absolute; top:-65px;left: 60px;}
+.xt-horizontal.xt-bubble .xt-source{position: absolute; top:-45px;left: 60px;}

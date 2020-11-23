@@ -1,0 +1,76 @@
+<?php
+/**
+ * @package 	Jtouch.Template
+ * @author		Nguyen Mobile
+ * @copyright	Copyright (C) 2011 - 2013 JTouchMobile.com. All rights reserved.
+ * @license		GNU/GPL, see LICENSE.php
+ * Joomla! is free software. This version may have been modified pursuant
+ * to the GNU General Public License, and as distributed it includes or
+ * is derivative of works licensed under the GNU General Public License or
+ * other free or open source software licenses.
+ * See COPYRIGHT.php for copyright notices and details.
+ */
+
+defined('JPATH_BASE') or die;
+
+jimport('joomla.form.formfield');
+
+/**
+ * Form Field class for the Joomla Framework.
+ *
+ * @package		Joomla.Framework
+ * @subpackage	Form
+ * @since		1.6
+ */
+class JFormFieldClearcache extends JFormField
+{
+	/**
+	 * The form field type.
+	 *
+	 * @var		string
+	 * @since	1.6
+	 */
+	protected $type = 'Clearcache';
+
+	/**
+	 * Method to get the field input markup.
+	 *
+	 * @return	string	The field input markup.
+	 * @since	1.6
+	 */
+	protected function getInput()
+	{
+		return ' ';
+	}
+
+	/**
+	 * Method to get the field label markup.
+	 *
+	 * @return	string	The field label markup.
+	 * @since	1.6
+	 */
+	protected function getLabel()
+	{
+		JHTML::_('behavior.modal');
+		$document = JFactory::getDocument();
+		
+		$document->addStyleSheet(JURI::root(true).'/templates/jtouch25/css/template.admin.css');
+		
+		$content  = '<div class="clr"></div><div>'.JText::_('JTOUCH25_TPL_CLEAR_CACHE_DESC').'</div>';
+		$content .= '<a href="index.php?jtclearcache=1" class="modal jt-button"  rel="{handler: \'iframe\', size: {x: 400, y: 100}}"><span class="icon16 icon-clear-cache">'.JText::_('JTOUCH25_TPL_CLEAR_CACHE').'</span></a>';
+		$content .= '<div class="clr"></div>';
+		
+		return $content;
+	}
+	
+	/**
+	 * Method to get the field title.
+	 *
+	 * @return	string	The field title.
+	 * @since	1.6
+	 */
+	protected function getTitle()
+	{
+		return $this->getLabel();
+	}
+}

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<install version="2.5" type="template" method="upgrade">
+	<name>jtouch25</name>
+	<author>JTouchMobile.com</author>
+	<authorEmail>proservices@jtouchmobile.com</authorEmail>
+	<authorUrl>http://www.jtouchmobile.com</authorUrl>
+	<copyright>Copyright 2011-2013 JTouchMobile.com. All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<creationDate>Apr 2013</creationDate>
+	<version>2.5.27</version>
+	<description>TPL_JTOUCH25_XML_DESCRIPTION</description>
+	<files>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>component.php</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>template_preview.png</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>jtouch.png</filename>
+		<filename>banner.png</filename>
+		<folder>utils</folder>
+		<folder>page-elements</folder>
+		<folder>elements</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>images</folder>
+		<folder>icons</folder>
+		<folder>html</folder>
+		<folder>jtouchmobile</folder>
+		<folder>-customize</folder>
+	</files>
+	<languages folder="languages">
+		<language tag="en-GB">en-GB.tpl_jtouch25.ini</language>
+		<language tag="en-GB">en-GB.tpl_jtouch25.sys.ini</language>
+	</languages>
+	<positions>
+		<position>jtouch-nav</position>
+		<position>jtouch-banner</position>
+		<position>jtouch-panel</position>
+		<position>jtouch-top</position>
+		<position>jtouch-bottom</position>
+		<position>jtouch-breadcrumb</position>
+		<position>jtouch-footer</position>
+		<position>jtouch-menu</position>
+		<position>jtouch-search</position>
+		<position>jtouch-tools</position>
+		<position>jtouch-rtools</position>
+		<position>jtouch-user1</position>
+		<position>jtouch-user2</position>
+	</positions>
+	<config>
+		<fields name="params">
+			<fieldset name="lnf" label="JTOUCH25_TPL_LOOK_FEEL_PANEL">
+				<field name="version" type="spacer" label="Version: 2.5.27 - Pro" />
+				<field name="jtouch-theme" type="list" default="d" label="JTOUCH25_TPL_PAGE_THEME" description="JTOUCH25_TPL_PAGE_THEME_DESC">
+					<option value="a">A - Black</option>
+					<option value="b">B - Blue</option>
+					<option value="c">C - Silver</option>
+					<option value="d">D - Gray</option>
+					<option value="e">E - Yellow</option>
+					<option value="e">F - Your design F</option>
+					<option value="e">G - Your design G</option>
+				</field>
+				<field name="jtouch-page-transition" type="list" default="fade" label="JTOUCH25_TPL_PAGE_TRAN" description="JTOUCH25_TPL_PAGE_TRAN_DESC">
+					<option value="fade">Fade</option>
+					<option value="pop">Pop</option>
+					<option value="flip">Flip</option>
+					<option value="turn">Turn</option>
+					<option value="flow">Flow</option>
+					<option value="slidefade">Slide fade</option>
+					<option value="slide">Slide</option>
+					<option value="slideup">Slide up</option>
+					<option value="none">None</option>
+				</field>
+				
+				<field name="spacer-header" type="spacer" hr="true" />
+				<field name="jtouch-banner" type="text" default="templates/jtouch25/banner.png" label="JTOUCH25_TPL_BANNER_URL" description="JTOUCH25_TPL_BANNER_URL_DESC" />
+				<field name="jtouch-display-header" type="radio" default="1" label="JTOUCH25_TPL_BANNER_SHOW_HEADER" description="JTOUCH25_TPL_BANNER_SHOW_HEADER_DESC">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="jtouch-header-theme" type="list" default="b" label="JTOUCH25_TPL_HEADER_THEME" description="JTOUCH25_TPL_HEADER_THEME_DESC">
+					<option value="a">A - Black</option>
+					<option value="b">B - Blue</option>
+					<option value="c">C - Silver</option>
+					<option value="d">D - Gray</option>
+					<option value="e">E - Yellow</option>
+					<option value="e">F - Your design F</option>
+					<option value="e">G - Your design G</option>
+				</field>
+				<field name="jtouch-fixed-header" type="radio" default="0" label="JTOUCH25_TPL_HEADER_FIXED" description="JTOUCH25_TPL_HEADER_FIXED_DESC">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="jtouch-header-button-view" type="list" default="1" label="JTOUCH25_TPL_HEADER_BUTTON" description="JTOUCH25_TPL_HEADER_BUTTON_DESC">
+					<option value="1">Text + Image</option>
+					<option value="2">Text Only</option>
+					<option value="3">Image Only</option>
+				</field>
+				<field name="jtouch-always-show-back" type="list" default="0" label="JTOUCH25_TPL_BACK_BUTTON" description="JTOUCH25_TPL_BACK_BUTTON_DESC">
+					<option value="1">Text + Image</option>
+					<option value="2">Image Only</option>
+					<option value="0">No</option>
+				</field>
+				<field name="jtouch-footer-theme" type="list" default="d" label="JTOUCH25_TPL_FOOTER_THEME" description="JTOUCH25_TPL_FOOTER_THEME_DESC">
+					<option value="a">A - Black</option>
+					<option value="b">B - Blue</option>
+					<option value="c">C - Silver</option>
+					<option value="d">D - Gray</option>
+					<option value="e">E - Yellow</option>
+					<option value="e">F - Your design F</option>
+					<option value="e">G - Your design G</option>
+				</field>
+				<field name="jtouch-fixed-footer" type="radio" default="0" label="JTOUCH25_TPL_FOOTER_FIXED" description="JTOUCH25_TPL_FOOTER_FIXED_DESC">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<!--  THIS IS FOR JQM 1.3 -->
+				<field name="spacer-panel" type="spacer" hr="true" />
+				<field name="jtouch-show-panel" type="list" default="none" label="JTOUCH25_TPL_PANEL" description="JTOUCH25_TPL_PANEL_DESC">
+					<option value="none">No</option>
+					<option value="left">JTOUCH25_TPL_PANEL_LEFT</option>
+					<option value="right">JTOUCH25_TPL_PANEL_RIGHT</option>
+				</field>
+				<field name="jtouch-panel-type" type="list" default="overlay" label="JTOUCH25_TPL_PANEL_TYPE" description="JTOUCH25_TPL_PANEL_TYPE_DESC">
+					<option value="overlay">Overlay</option>
+					<option value="reveal">Reveal</option>
+					<option value="push">Push</option>
+				</field>
+				<field name="spacer-desktop" type="spacer" hr="true" />
+				<field name="jtouch-desktop-template" type="list" default="-1" label="JTOUCH25_TPL_SWITCH_DESKTOP" description="JTOUCH25_TPL_SWITCH_DESKTOP_DESC">
+					<option value="1">On Top of the Menu page</option>
+					<option value="2">At the Bottom of the Menu page</option>
+					<option value="-1">No Display</option>
+				</field>
+				<field name="jtouch-desktop-page" type="radio" default="1" label="JTOUCH25_TPL_DESKTOP_PAGE" description="JTOUCH25_TPL_DESKTOP_PAGE_DESC">
+					<option value="1">Current page</option>
+					<option value="0">No, redirect to this page:</option>
+				</field>
+				<field name="jtouch-desktop-page-item" type="menuitem" default="0"  label="-" description="JTOUCH25_TPL_DESKTOP_MENU_DESC" />
+				
+				<field name="spacer-preview" type="spacer" hr="true" />
+				<field addfieldpath="/templates/jtouch25/elements" name="viewmobile" type="viewmobile" value="true" default="true"/>
+			</fieldset>
+			
+			<fieldset name="ios" label="JTOUCH25_TPL_IOS_PANEL">
+				<field name="jtouch-ios-add-app" type="radio" default="1" label="JTOUCH25_TPL_SHOW_ADD_HOME" description="JTOUCH25_TPL_SHOW_ADD_HOME_DESC">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="jtouch-ios-icons" type="text" default="icons" label= "JTOUCH25_TPL_ICON_FOLDER" description="JTOUCH25_TPL_ICON_FOLDER_DESC" />
+			</fieldset>
+			
+			<fieldset name="gbs" label="JTOUCH25_TPL_ADVANCED_PANEL">
+				<field name="jtouch-turnoff-ids" class="" type="text" default="-1"  label="JTOUCH25_TPL_TURN_OFF" description="JTOUCH25_TPL_TURN_OFF_DESC" />
+				
+				<field name="space-debug" type="spacer" hr="true" />
+				<field addfieldpath="/templates/jtouch25/elements" name="clearcache" type="clearcache" value="true" default="true"/>
+				
+				<field name="jtouch-debug" type="radio" default="1" label="JTOUCH25_TPL_DEBUG" description="JTOUCH25_TPL_DEBUG_DESC">
+					<option value="1">On</option>
+					<option value="0">Off</option>
+				</field>
+				
+				<field name="jtouch-jquery-load" type="radio" default="1" label="JTOUCH25_TPL_JQUERY" description="JTOUCH25_TPL_JQUERY_DESC">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="jtouch-jqm-css" type="list" default="1" label="JTOUCH25_TPL_JQMCSS" description="JTOUCH25_TPL_JQMCSS_DESC">
+					<option value="1">Full</option>
+					<option value="2">Structure Only</option>
+				</field>
+				<field name="jtouch-show-powerby" type="radio" default="1" label="JTOUCH25_TPL_COPYRIGHT" description="JTOUCH25_TPL_COPYRIGHT_DESC">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="space-module-mapping" type="spacer" hr="true" />
+				<field name="space-module-mapping-header" type="spacer" label="JTOUCH25_TPL_MAPPING"/>
+				<field name="space-module-mapping-desc" type="spacer" label="JTOUCH25_TPL_MAPPING_DESC"/>
+				<field name="jtouch-mm-jtouch-banner" type="text" default="jtouch-banner" label="jtouch-banner" />
+				<field name="jtouch-mm-jtouch-panel" type="text" default="jtouch-panel" label="jtouch-panel" />
+				<field name="jtouch-mm-jtouch-top" type="text" default="jtouch-top" label="jtouch-top" />
+				<field name="jtouch-mm-jtouch-user1" type="text" default="jtouch-user1" label="jtouch-user1" />
+				<field name="jtouch-mm-jtouch-user2" type="text" default="jtouch-user2" label="jtouch-user2" />
+				<field name="jtouch-mm-jtouch-bottom" type="text" default="jtouch-bottom" label="jtouch-bottom" />
+				<field name="jtouch-mm-jtouch-breadcrumb" type="text" default="jtouch-breadcrumb" label="jtouch-breadcrumb" />
+				<field name="jtouch-mm-jtouch-footer" type="text" default="jtouch-footer" label="jtouch-footer" />
+			</fieldset>
+			
+			<fieldset name="gas" label="JTOUCH25_TPL_GOOGLE_PANEL">
+				<field name="jtouch-google-captcha-enable" type="radio" default="0" label="JTOUCH25_TPL_RECAPTCHA" description="JTOUCH25_TPL_RECAPTCHA_DESC">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="jtouch-google-captcha-publickey" type="text" default="" label="JTOUCH25_TPL_RECAPTCHA_KEY" description="JTOUCH25_TPL_RECAPTCHA_KEY_DESC" />
+				
+				<field name="spacer-google-analytics" type="spacer" hr="true" />
+				<field name="jtouch-google-analytics" type="radio" default="0" label="JTOUCH25_TPL_GA" description="JTOUCH25_TPL_GA_DESC">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="jtouch-google-account" type="text" default="UA-26927250-9" label="JTOUCH25_TPL_GA_ACCOUNT" description="JTOUCH25_TPL_GA_ACCOUNT_DESC" />
+				<field name="jtouch-google-domain" type="text" default="yourdomain.com" label="JTOUCH25_TPL_GA_DOMAIN" description="JTOUCH25_TPL_GA_DOMAIN_DESC" />
+				
+				<field name="space-google-adsence" type="spacer" hr="true" />
+				<field name="jtouch-google-adsence" type="list" default="0" label="JTOUCH25_TPL_ADSENCE" description="JTOUCH25_TPL_ADSENCE_DESC">
+					<option value="0">No</option>
+					<option value="1">Top</option>
+					<option value="2">Bottom</option>
+					<option value="3">Top + Bottom</option>
+				</field>
+				<field name="jtouch-google-adsence-type" type="list" default="NATIVE" label="JTOUCH25_TPL_ADSENCE_TYPE" description="JTOUCH25_TPL_ADSENCE_TYPE_DESC">
+					<option value="PHP">PHP Code</option>
+					<option value="NATIVE">NATIVE Code</option>
+				</field>
+				<field name="jtouch-google-adsence-client" type="text" default="ca-pub-1140773070490***" label="JTOUCH25_TPL_ADSENCE_ID" description="JTOUCH25_TPL_ADSENCE_ID_DESC" />
+				<field name="jtouch-google-adsence-slot" type="text" default="7226972***" label="JTOUCH25_TPL_ADSENCE_SLOT" description="JTOUCH25_TPL_ADSENCE_SLOT_DESC" />
+				<field name="jtouch-google-adsence-width" type="text" default="320" label="JTOUCH25_TPL_ADSENCE_WIDTH" description="JTOUCH25_TPL_ADSENCE_WIDTH_DESC" />
+				<field name="jtouch-google-adsence-height" type="text" default="50" label="JTOUCH25_TPL_ADSENCE_HEIGHT" description="JTOUCH25_TPL_ADSENCE_HEIGHT_DESC" />
+				
+			</fieldset>
+			
+			<fieldset name="extraex" label="JTOUCH25_TPL_EX_PANEL">
+				<field name="space-vm" type="spacer" label="JTOUCH25_TPL_VM2" />
+				<field name="jtouch-virtuemart-mobile-layout" type="radio" default="0" label="JTOUCH25_TPL_VM2_RESPONSIVE" description="JTOUCH25_TPL_VM2_RESPONSIVE_DESC">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</install>

@@ -1,0 +1,42 @@
+.clr{
+	clear: both;
+}
+.jt-button{
+	border: 1px solid #CCC;
+	background-color: #FAFAFA;
+	border-radius: 5px;
+	padding: 2px 5px;
+	margin: 5px 0;
+	display: inline-block;
+}
+.jt-button:hover{
+	background-color: #FFF;
+	text-decoration: none;
+}
+.jt-warning{
+	background-color: teal;
+	color: #FFF;
+	padding: 5px;
+	font-size: 13px;
+	margin-bottom: 5px;
+}
+.jt-warning a, 
+.jt-warning a:visited {
+	color: #FFF;
+	cursor: pointer;
+}
+.jt-mobile-view{
+	background-color: #F4F4F4;
+	padding: 5px;
+}
+.icon16{
+	display: block;
+	min-height: 16px;
+	padding-left: 20px;
+}
+.icon-clear-cache{
+	background: transparent url('admin-images/icon-16-clear.png') no-repeat left top;
+}
+.icon-web{
+	background: transparent url('admin-images/icon-16-language.png') no-repeat left top;
+}

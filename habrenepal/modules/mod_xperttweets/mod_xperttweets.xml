@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="2.5"
+	client="site"
+	method="upgrade">
+	<name>Xpert Tweets</name>
+	<author>ThemeXpert</author>
+	<creationDate>${build.date}</creationDate>
+	<copyright>Copyright (C) 2011 - 2012 ThemeXpert. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>support@themexpert.com</authorEmail>
+	<authorUrl>www.themexpert.com</authorUrl>
+	<version>1.2</version>
+	<description>Xpert Tweets is show recent tweets update.</description>
+	<files>
+		<filename module="mod_xperttweets">mod_xperttweets.php</filename>
+		<folder>tmpl</folder>
+		<folder>vendor</folder>
+		<folder>fields</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_xperttweets.xml</filename>
+	</files>
+
+	<!-- UPDATESERVER DEFINITION -->
+    <updateservers>
+        <server type="extension" priority="1" name="Xpert Tweets Update">http://www.themexpert.com/ustreams/extensions/xperttweets.xml</server>
+    </updateservers>
+
+	<config>
+		<fields name="params" addfieldpath="modules/mod_xperttweets/fields">
+			<fieldset name="basic">
+
+				<field name="generaldoc" type="doc" />
+
+				<field name="consumer_key" type="text" label="Consumer key" description="Please follow the documentaion" />
+				<field name="consumer_secret" type="text" label="Consumer secret" description="Please follow the documentaion" />
+				<field name="access_token" type="text" label="Access token" description="Please follow the documentaion" />
+				<field name="access_token_secret" type="text" label="Access token secret" description="Please follow the documentaion" />
+
+                <field name="layouts" type="list" default="vertical" label="Layout" description="Select your layout" >
+                    <option value="horizontal">Horizontal</option>
+                    <option value="vertical">Vertical</option>
+                </field>
+
+                <field name="style" type="list" default="basic" label="Style" description="Select your style" >
+                    <option value="basic">Basic</option>
+                    <option value="bubble">Bubble</option>
+                </field>
+
+                <field name="count" type="text" default="15" label="Max# tweets" description=""/>
+
+                <field name="show_tweet" type="list" default="user" label="Show tweets from" description="" >
+                    <option value="user">User</option>
+                    <option value="search">Search</option>
+                </field>
+
+				<field name="tweet_term" type="text" default="themexpert" label="Tweet term" description="Set username or search terms where the tweets come from" />
+
+                <field name="profile" type="radio" default="0" label="Show profile" description="Show profile details" >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+				<field name="profile_image" type="radio" default="1" label="Profile image" description="Show/Hide profile image on every tweets" >
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="time" type="radio" default="1" label="Show time" description="Show tweet time">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="source" type="radio" default="0" label="Show source" description="Show tweet source">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="follow" type="radio" default="0" label="Follow link" description="Show follow us link in bottom">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="follow_text" type="text" default="Follow us on twitter" label="Follow us text" description="Follow us text to link with profile" />
+
+				<field name="cache_time" type="text" default="1900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

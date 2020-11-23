@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" method="upgrade">
+  <name>cleanlogic</name>
+  <creationDate>March 2013</creationDate>
+  <author>Robin Jungermann - Crosstec GmbH &amp; Co. KG</author>
+  <copyright>Copyright © 2013 Robin Jungermann</copyright>
+  <licence>GNU/GPL 2.2</licence>
+  <authorEmail>info@crosstec.de</authorEmail>
+  <authorUrl>http://crosstec.de</authorUrl>
+  <version>2.4</version>
+  <description>cleanlogic - an easy-to-use Joomla! website template</description>
+  <files>
+    <folder>css</folder>
+    <folder>fonts</folder>
+    <folder>html</folder>
+    <folder>images</folder>
+    <folder>js</folder>
+    <folder>languages</folder>
+    <folder>system</folder>
+    <folder>content_images_source</folder>
+    <folder>bg_images_source</folder>
+    <folder>images_source</folder>
+    <folder>elements</folder>
+    <filename>component.php</filename>
+    <filename>error.php</filename>
+    <filename>favicon.ico</filename>
+    <filename>index.html</filename>
+    <filename>index.php</filename>
+    <filename>offline.php</filename>
+    <filename>templateDetails.xml</filename>
+  </files>
+  <languages folder="languages">
+    <language tag="en-GB">en-GB/en-GB.tpl_cleanlogic.ini</language>
+    <language tag="en-GB">en-GB/en-GB.tpl_cleanlogic.sys.ini</language>
+  </languages>
+  <positions>
+    <position>searchHeader</position>
+    <position>loginHeader</position>
+    <position>mainNav</position>
+    <position>highlights_1_1</position>
+    <position>highlights_1_2</position>
+    <position>highlights_1_3</position>
+    <position>highlights_1_4</position>
+    <position>highlights_1_5</position>
+    <position>highlights_1_6</position>
+    <position>maincontent_1_1</position>
+    <position>maincontent_1_2</position>
+    <position>maincontent_1_3</position>
+    <position>maincontent_1_4</position>
+    <position>maincontent_1_5</position>
+    <position>maincontent_1_6</position>
+    <position>maincontent_2_1</position>
+    <position>maincontent_2_2</position>
+    <position>maincontent_2_3</position>
+    <position>maincontent_2_4</position>
+    <position>maincontent_2_5</position>
+    <position>maincontent_2_6</position>
+    <position>left</position>
+    <position>right</position>
+    <position>footer_1_1</position>
+    <position>footer_1_2</position>
+    <position>footer_1_3</position>
+    <position>footer_1_4</position>
+    <position>footer_1_5</position>
+    <position>footer_1_6</position>
+    <position>breadcrumbs</position>
+    <position>slider</position>
+  </positions>
+<config>
+    <fields name="params" addpath="/templates/cleanlogic/elements" addfieldpath="/templates/cleanlogic/elements">
+      <fieldset name="advanced">
+        
+         <field type="spacer" class="text" label="&lt;a href='http://crosstec.de/en/joomla-templates.html' target='_blank'&gt;&lt;b style='color:red;text-decoration: underline'&gt;Get this template with footer removal, color picker and more options from here!&lt;/b&gt;&lt;/a&gt;" />
+	 <field type="spacer" class="text" label="&lt;a href='http://crosstec.de/media/cleanlogic_docs.pdf' target='_blank'&gt;&lt;b style='color:red;text-decoration: underline'&gt;Documentation PDF&lt;/b&gt;&lt;/a&gt;" />
+				
+          
+        <field name="logo" type="media"
+          label="Logo"
+          description="Upload a logo for the site header."/>
+                    
+        <field name="max_sitewidth" type="text" size="10" default="960" 
+          label="Site Width" 
+          description="Set the maximum width of the site in pixels."
+          filter="int" />
+
+        <field name="responsive" type="radio" default="1" 
+          label="Responsive Layout" description="Make the site's layout adapt to lower resolutions and devices like mobile phones, tablet PCs, etc.">
+          <option value="1">yes</option>
+          <option value="0">no</option>
+        </field>
+        
+        <field name="equalmods" type="radio" default="1" 
+          label="Equalize Module Height" description="Set the height of all modules in a row to the same height.">
+          <option value="1">yes</option>
+          <option value="0">no</option>
+        </field>
+
+        
+        <field name="bg_style" type="list" default="01_alphablending"
+          label="Background style"
+          description="Select a background style">
+          <option value="01_alphablending">smooth noise</option>
+          <option value="02_alphablending">gradient: light center</option>
+          <option value="03_alphablending">gradient: dark center</option>
+          <option value="04_alphablending">blueprint</option>
+          <option value="05_alphablending">concrete</option>
+        </field>
+        
+        <field name="show_menu_text" type="input" default="Select a Page" 
+          label="'Show Menu' Button Text" 
+          description="Enter the text you want to appear first in the select-list navigation for small resolutions."
+        />
+
+        <field name="main_font_size" type="input" size="2" default="12" 
+          label="Main Font Size" 
+          description="Set the size for the text in Articles, Modules, etc."
+        />
+
+      </fieldset>
+    </fields>
+  </config>
+</extension>

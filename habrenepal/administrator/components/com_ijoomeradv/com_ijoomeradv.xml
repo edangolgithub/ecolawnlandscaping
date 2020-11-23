@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://www.joomla.org/xml/dtd/1.5/component-install.dtd">
+<extension type="component" version="2.5.0"  method="upgrade">
+	<name>ijoomeradv</name>
+	<version>1.3</version>
+	<author>Tailored Solutions - ijoomer.com</author>
+	<creationDate>April 22</creationDate>
+	<copyright>Copyright (C) 2010 Tailored Solutions. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@ijoomer.com</authorEmail>
+	<authorUrl>http://www.ijoomer.com</authorUrl>	
+	<description>iJoomerAdv component has been successfully installed.</description>
+	
+	<installfile>install.ijoomeradv.php</installfile>
+	<uninstallfile>uninstall.ijoomeradv.php</uninstallfile>
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	
+	<administration>
+		<menu img="components/com_ijoomeradv/assets/images/ijoomeradv_16.png" >COM_IJOOMERADV_TITLE</menu>
+		<submenu>
+			<menu img="components/com_ijoomeradv/assets/images/extensions_16.png" view="extensions">COM_IJOOMERADV_EXTENSIONS</menu>
+			<menu img="components/com_ijoomeradv/assets/images/extensionmanager_16.png" view="extensions" layout="manage">COM_IJOOMERADV_EXTENSIONS_MANAGER</menu>
+			<menu img="components/com_ijoomeradv/assets/images/configuration_16.png" view="config">COM_IJOOMERADV_CONFIGURATION</menu>
+			<menu img="components/com_ijoomeradv/assets/images/menumanager_16.png" view="menus">COM_IJOOMERADV_MENUS</menu>
+			<menu img="components/com_ijoomeradv/assets/images/pushnotification_16.png" view="pushnotif">COM_IJOOMERADV_PUSH_NOTIFICATION</menu>
+		</submenu>	
+		<files folder="admin">
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>logs</folder>
+			<folder>models</folder>
+			<folder>tables</folder>	
+			<folder>views</folder>	
+			<folder>theme</folder>
+			<filename>index.html</filename>	
+			<filename>ijoomeradv.php</filename>
+			<filename>install.mysql.utf8.sql</filename>
+			<filename>uninstall.mysql.utf8.sql</filename>
+		</files>
+		<languages folder="admin/languages">
+			<language tag="en-GB">en-GB.com_ijoomeradv.ini</language>
+			<language tag="en-GB">en-GB.com_ijoomeradv.sys.ini</language>
+		</languages>
+	</administration>
+	
+	<files folder="site">
+		<folder>assets</folder>
+		<folder>controllers</folder>
+		<folder>encryption</folder>
+		<folder>extensions</folder>
+		<folder>helpers</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+		<filename>index.html</filename>	
+		<filename>ijoomeradv.php</filename>
+	</files>
+	<languages folder="site/languages">
+			<language tag="en-GB">en-GB.com_ijoomeradv.ini</language>
+		</languages>
+</extension>

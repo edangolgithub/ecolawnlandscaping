@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr" >
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  	<title>Jtouch Mobile - Preview</title>
+  	<link rel="stylesheet" href="../../../administrator/templates/bluestork/css/template.css" type="text/css" />
+  	<link rel="stylesheet" href="../css/template.admin.css" type="text/css" />
+  
+	<script src="../../../media/system/js/mootools-core.js" type="text/javascript"></script>
+	<script src="../../../media/system/js/mootools-more.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+		// Hide popup window, redirect to desktop version and then close the preview window
+		function jtSwithToDesktop(){
+			var tCounter = 5;
+			var jtInervalID;
+			$('jtmobileframe').set('src', '../../../index.php?jtpl=1&force=0');
+			//console.log($('jtmobileframe').get('src'));
+			$('jtmobilemessage').set('html','Please wait for '+ tCounter + ' seconds..');
+			
+			//$('sbox-overlay').hide();
+			//$('sbox-window').hide();
+			jtInervalID = setInterval(function(){
+				$('jtmobilemessage').set('html','Please wait for '+ tCounter + ' seconds..');
+				tCounter--;
+			}, 1000);
+			
+			setTimeout(function(){
+				//console.log('close preview window');
+				clearInterval(jtInervalID);
+				//$('sbox-btn-close').click();
+				window.parent.jtClosePreviewBox();
+			}, tCounter*1000);
+			
+			
+		}
+	</script>
+</head>
+
+<body>
+	<div class="jt-warning" id="jtmobilemessage"><a onClick= "jtSwithToDesktop();">[IMPORTANT] To close this preview window and turn back to desktop version, PLEASE CLICK HERE</a></div>
+	<div class="jt-mobile-view">
+		<iframe id="jtmobileframe" src="../../../index.php?jtpl=1&force=1" width="100%" height="480px"></iframe>
+	</div>
+</body>
+</html>

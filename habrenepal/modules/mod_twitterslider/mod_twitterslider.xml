@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extension	type="module"	version="2.5"	client="site"	method="upgrade">
+		<name>Twitter Slider Widget</name> 
+        <author>Priam</author> 
+        <creationDate>2013-06-19</creationDate> 
+        <license>GPL 2.0</license> 
+        <authorEmail>admin@twitterslider.com</authorEmail> 
+       	<version>1.0.0</version> 
+		<description>Thanks for installing Twitter Slider Widget</description>
+    <files>
+
+        <filename module="mod_twitterslider">mod_twitterslider.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+		<filename>twitter_right.png</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+
+    </files>
+<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="Module Class Suffix" />
+				<field name="loadjQuery" type="radio" default="1" label="Load jQuery" description="jQuery is required by this module. The only reason not to load it is if it has already been loaded manually or by another module.">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field
+					name="twitter_username"
+					type="text"
+					default="google"
+					label="Twitter Username"
+					description="Put your twitter username" />
+				<field
+					name="twitter_widget_id"
+					type="text"
+					default="346792666668871680"
+					label="Twitter Widget Id"
+					description="Put your twitter widget id" />
+				<field
+					name="widget_theme"
+					type="radio"
+					default="light"
+					label="Widget Theme"
+					description="Choose Widget Theme">
+					<option value="light">Light</option>
+					<option value="dark">Dark</option>
+				</field>
+				
+			</fieldset>
+		</fields>
+	</config>
+</extension>

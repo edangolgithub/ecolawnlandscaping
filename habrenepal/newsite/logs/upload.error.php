@@ -1,0 +1,30 @@
+#
+#<?php die('Forbidden.'); ?>
+#Date: 2013-11-10 08:22:06 UTC
+#Software: Joomla Platform 11.4.0 Stable [ Brian Kernighan ] 03-Jan-2012 00:00 GMT
+
+#Fields: date	time	priority	clientip	category	message
+2013-11-10	08:22:06	INFO	113.199.144.109	-	
+2013-11-10	09:02:53	INFO	113.199.144.109	-	
+2013-11-10	09:56:55	INFO	113.199.144.109	-	
+2013-11-11	05:40:30	INFO	113.199.166.136	-	
+2013-11-11	06:07:46	INFO	113.199.166.136	-	
+2013-11-11	06:14:00	INFO	113.199.166.136	-	
+2013-11-11	06:29:54	INFO	113.199.166.136	-	
+2013-11-12	01:36:52	INFO	113.199.154.138	-	
+2013-11-12	01:45:10	INFO	113.199.154.138	-	
+2013-11-23	06:29:33	INFO	113.199.177.33	-	
+2014-01-01	08:04:53	INFO	113.199.163.122	-	
+2014-01-01	08:29:01	INFO	113.199.163.122	-	
+2014-01-01	08:39:00	INFO	113.199.163.122	-	
+2014-01-01	10:29:41	INFO	113.199.163.122	-	
+2014-01-01	10:34:13	INFO	113.199.163.122	-	
+2015-02-09	07:21:31	INFO	113.199.219.227	-	phocagallery/2015
+2015-02-09	07:27:49	INFO	113.199.219.227	-	phocagallery/2015
+2015-02-09	07:28:21	INFO	113.199.219.227	-	phocagallery/2015
+2015-02-09	07:29:23	INFO	113.199.219.227	-	phocagallery/2015
+2015-02-09	07:30:03	INFO	113.199.219.227	-	File exists: /home/ecolawnl/public_html/images/phocagallery/2015/leaf-removal-pic.png by user_id 719
+2015-02-09	07:30:47	INFO	113.199.219.227	-	phocagallery/2015
+2015-02-09	07:32:07	INFO	113.199.219.227	-	phocagallery/2015
+2015-02-09	07:32:53	INFO	113.199.219.227	-	phocagallery/2015
+2015-02-09	07:33:07	INFO	113.199.219.227	-	File exists: /home/ecolawnl/public_html/images/phocagallery/2015/recovering-landscape-pic.png by user_id 719

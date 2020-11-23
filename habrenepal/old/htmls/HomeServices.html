@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Eco Friendly Lawn & Landscaping</title>
+<link href="styles/landscaping.css" rel="stylesheet" type="text/css"/>
+<link href="styles/services.css" rel="stylesheet" type="text/css"/>
+
+
+<script>
+  document.createElement('header');
+  document.createElement('footer');
+  document.createElement('section');
+  document.createElement('aside');
+  document.createElement('nav');
+  document.createElement('sidenav');
+  document.createElement('article');
+</script>
+</head>
+
+<body>
+	<div class="container">
+        <a href="index.php"><div id="company"></div></a>  <!-- Logo -->
+        <div id="contact">	<!-- Contact -->
+            <a href="https://twitter.com/EcoLawnLand"><div id="twitter"></div></a>
+            <a href="http://www.facebook.com/EcoFriendlyLawnAndLandscapingLlc?ref=ts&fref=ts"><div id="facebook"></div></a>
+            <div class="clear"></div>
+            <div id="icon1"></div>
+            <p class="text1">571 480 6180</p>
+        </div>        
+    </div> 
+     <div class="clear"></div>
+    <div id="gallery">
+    	<div class="slider">
+        	<img src="images/frontpage/image1.gif"/>
+            <img src="images/frontpage/image2.gif"/>
+            <img src="images/frontpage/image3.gif"/>
+            <img src="images/frontpage/image4.gif"/>
+            
+        </div>
+        <div class="clear"></div>
+    </div> 
+    <div class="container">  
+        <nav>	<!-- NAVIGATION  -->
+           <ul>
+             <li><a href="index.php">home</a></li>
+             <li><a href="services-lawn-care.php">services</a></li>
+             <li><a href="portfolio.php">portfolio</a></li>
+             <li><a href="testimonials.php">testimonials</a></li>
+             <li><a href="contact-us.php">contact us</a></li>
+           </ul>
+        </nav>
+        <div class="clear"></div>
+       	<aside>	<!-- side navigation -->
+        	<div id="top"></div>
+            <div id="mid">
+            	<sidenav>
+                	<ul>
+                    	<li><a href="services-lawn-care.php">Lawn Care</a></li>
+                        <li class="separator"></li>
+                        <li><a href="services-maintenance.php">Maintenance</a></li>
+                        <li class="separator"></li>
+                        <li><a href="services-landscaping.php">landscaping</a></li>
+                    <!--    <li class="separator"></li>
+                        <li><a href="#">hardscape</a></li>
+                        <li class="separator"></li>
+                        <li><a href="#">outdoor rooms</a></li>
+                        <li class="separator"></li>
+                        <li><a href="#">outdoor lighting</a></li>-->
+                    </ul>
+                </sidenav>
+            </div>
+            <div id="bottom"></div>
+        
+        	<div class="otherLogo"><script src="http://www.servicemagic.com/rfs/serviceprofessional/media/sealOfApproval.jsp?sp=34013751&key=ab75aec698ed86f79e339b7a7bac6d26"></script><span style="font: 8px Arial;">Powered by <a href="http://www.servicemagic.com/" >HomeAdvisor</a></span></div>	
+        
+        
+        </aside>
+        <section>	<!-- ROW -->
+        	<div id="page">
+                <div class="bodytext">
+                <!-- <?if(strlen(trim($PagetTitle))>0):?><h1><?echo $PageTitle;?></h1><?endif;?> -->
+                <?if(isset($TopTemplate)): require "$TopTemplate";endif;?>
+                <?if(isset($Template)): require "$Template";endif;?>
+                <?if(isset($BottomTemplate)): require "$BottomTemplate";endif;?>
+                </div>
+                      <div class="clear"></div>   
+                    
+            </div>
+    	</section>
+        <div class="clear"></div>
+        <footer>
+        	<p id="copyright">Copyright &copy; 2012 <span>Eco Friendly Lawn & Landscaping</span></p>
+            <p id="powered">Designed by <a href="http://www.greystarstudios.com" target="_new">Greystar Studios</a></p>
+        </footer>
+</div>
+   </body>
+</html>

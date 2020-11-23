@@ -1,0 +1,485 @@
+/**
+* @package JtouchMobile Template
+* @author Nguyen
+* @copyright	Copyright (C) 2012 MobileMeWs.com. All rights reserved.
+* @license		GNU/GPL, see LICENSE.php
+* Joomla! is free software. This version may have been modified pursuant
+* to the GNU General Public License, and as distributed it includes or
+* is derivative of works licensed under the GNU General Public License or
+* other free or open source software licenses.
+* See COPYRIGHT.php for copyright notices and details.
+*/
+
+/*@group Global setting*/
+a{
+	text-decoration: none;
+}
+img{
+	max-width: 100% !important;
+	height: auto;
+}
+.clr{
+	clear: both;
+}
+.nodisplay{
+	display: none;
+	height: 0;
+	clear: both;
+}
+.center{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+fieldset dt{
+	padding: 5px 0;
+	margin: 5px 0;
+	width: 45%;
+	float: left;
+	border-bottom: 1px dashed #999999;
+	clear: left;
+}
+
+fieldset dd{
+	padding: 5px 0;
+	margin: 5px 0;
+	width: 50%;
+	float:right;
+	clear: right;
+}
+/*@end*/
+
+/*@group System Message*/
+#system-message{
+	margin: 0;
+}
+#system-message dt{
+	display: none;
+}
+#system-message dd{
+	margin: 0;
+	padding: 0;
+}
+#system-message ul{
+	margin: 0;
+	padding: 0;
+}
+#system-message ul li{
+	display: block;
+	padding: 5px 0;
+}
+.error{
+	color: red!important;
+}
+label.error{
+	font-size: 90%;
+	display: block;
+	padding-top: 5px;
+}
+/*@end*/
+
+/*@group Page layout */
+.component-heading{
+	font-size: 1.8em;
+}
+.content-heading{
+	font-size: 1.4em;
+	margin: 8px 0;
+}
+table-heading{
+	font-weight: bold;
+}
+.description{
+	font-size: 90%;
+	color: #999999;
+}
+.description img{
+	max-width: 50px !important;
+	float: left;
+	padding: 0 5px 0;
+}
+
+/*Data layout*/
+#page-data{display: none;}
+#jdoc-component{}
+#jdoc-component ul li{
+	padding: 3px 0;
+}
+table.adminlist{
+	width: 100%;
+	border-spacing: 1px;
+}
+.tbl-key{
+	border-bottom: 1px dashed #999;
+	padding: 5px 0;
+	vertical-align: text-top;
+}
+table.adminlist td{
+	padding: 5px 2px;
+}
+tr.row0, tr.row1{
+	padding: 2px 0;
+}
+
+tr.row1{
+	background: #F1F1F1;
+}
+
+/*Article*/
+.article-blog{	
+}
+.article-blog .article-content img:first-child{
+	display: block;
+	float: none !important;
+	margin-bottom: 10px;
+}
+.items-leading p, .items-row p{
+	margin: 0;
+	padding: 0 0 5px 0;
+}
+.article-info, .iteminfo{
+	font-size: 80%;
+	color: #999;
+	margin-bottom: 5px;
+}
+.modifydate, .createdby, .createdate{
+	display: block;
+}
+
+ul.more-article a{
+	display: block;
+	padding-bottom: 10px;
+}
+ul.more-article li a:hover{
+	text-decoration: underline;
+}
+.img-fulltext-left {
+	float:left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.img-intro-left {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.img-fulltext-right {
+	float: right;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+.img-intro-right {
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+/*Contact*/
+.address{
+	padding: 10px 0;
+}
+
+/*Search*/
+.result-title{
+	margin: 15px 0 10px 0;
+}
+
+/*@end*/
+
+
+/*@group Module layouts*/
+.moduletable-border{
+	border-bottom: 1px solid #2489CE;
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+.moduletable-curve{
+	border: 1px dotted #2489CE;
+	border-radius: 5px;
+	margin: 10px 0;
+	padding: 5px 5px;
+}
+.moduletable-curve h3{
+	margin: 5px 0;
+}
+/*@end*/
+
+
+/*@group Header Logo */
+.jtouch-extratop .ui-page {
+	top: 80px;
+}
+.jtouch-extratop .ui-header-fixed{
+	top: 80px;
+}
+.jtouch-fixed-header #jtouch-logo{
+	top: 0;
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+}
+#jtouch-logo{
+	height: 80px;
+	text-align: center;
+	overflow: hidden;
+	background-color: #ffffff;
+	position: relative;
+}
+#jtouch-logo img{ margin: 0 auto;}
+.jt-header-icon img{
+	padding: 10px 5px;
+	width: 30px;
+	height: 30px;
+	display: block;
+	display: inline-block;
+}
+/*@end*/
+
+
+/*@group Horizal Navigator*/
+#jtouch-nav .inner-nav-1{padding-top: 7px;}
+#jtouch-nav li span.ui-btn-text{}
+#jtouch-nav li span.ui-btn-text img{
+	width: 24px;
+	padding-right: 5px;
+	float: left;
+}
+#jtouch-nav li span.image-title{
+	line-height: 24px;
+}
+#jtouch-nav li.active a, #jtouch-nav li a:hover{
+	color: #2489CE;
+}
+/*@end*/
+
+/*@group Main Menu */
+#jtouch-mainmenu{}
+#jtouch-mainmenu li .ui-btn-text img{
+	width: 44px;
+	padding-right: 5px;
+	float: left;
+}
+#jtouch-mainmenu .ui-li-has-thumb .ui-btn-inner a.ui-link-inherit, 
+#jtouch-mainmenu .ui-li-static.ui-li-has-thumb{
+	min-height: 10px !important;
+	padding-left: 50px !important;
+}
+/*@end*/
+
+
+/*@group Header tools*/
+.main-page-header{
+	display: block;
+	text-align: center;
+	min-height: 37px;
+}
+.main-page-header h1{
+	display: none !important;
+}
+.header-tools-left{
+	position:absolute;left:10px;display: inline; top: 0.2em; margin: 0 auto;
+}
+.header-tools-right{
+	position:absolute;right:10px;display: inline; top: 0.2em; margin: 0 auto;
+}
+.header-tools-center{
+	position: relative; display: inline-block; top: 0.2em; margin: 0 auto;
+}
+.ui-field-contain, fieldset.ui-field-contain{
+	padding: 0.4em 0 !important;
+	border-width: 0 !important; 
+}
+.button-no-text{top: 0 !important;}
+.button-no-text span.ui-btn-inner{
+	height: 13px !important;
+	padding: 0.6em 10px !important;
+}
+/*@end*/
+
+
+/*@group Tabs*/
+.tab-content{
+	display: none;
+}
+.tab-content h1{
+	display: none;
+}
+div.jtouch-tabs{
+	display: none;
+}
+div.jtouch-tabs .controlls{
+	display: inline;
+}
+/*@end*/
+
+/*@group Breadcrumb*/
+#page-pathway{}
+#page-pathway .breadcrumbs{
+	margin: 10px 0;
+	padding: 10px 10px;
+	font-size: 90%;
+	border: 1px solid #e1e1e1;
+	border-radius: 5px;
+}
+#page-pathway a, #page-pathway a:visited{
+	text-decoration: none;
+	padding: 5px 5px;
+	line-height: 120%;
+}
+/*@end*/
+
+
+/*@group Paging*/
+.pagination {
+	margin: 10px auto;
+	min-height: 20px;
+}
+.counter {
+	padding: 15px 0 0 5px;
+	margin: 0 auto;
+	font-size: 90%;
+}
+.pagination ul {
+	clear: both;
+	margin: 10px auto;
+	padding: 0;
+}
+ul.pagenav{
+	margin: 0 auto;
+}
+ul.pagenav:after{
+	clear: both;
+}
+ul.pagenav li,
+.pagination ul li {
+	display: table-cell;
+	list-style-type: none;
+}
+ul.pagenav li a, .pagination ul a,
+.pagination span.pagenav {
+	border: 1px solid #e1e1e1;
+	margin: 0 5px;
+	padding: 5px 10px;
+	border-radius: 5px;
+	text-decoration: none;
+}
+ul.pagenav li a:hover, .pagination ul a:hover{
+	border: 1px solid #b4b1b1;
+	background-color: #FFFFFF;
+}
+/*@end*/
+
+/*@group Footer*/
+#page-footer{
+	padding: 5px 5px;
+	font-size: 90%;	
+	text-align: center;
+}
+#page-footer p{
+	padding: 5px 0;
+	margin: 0;
+}
+.jtouch-copyright{
+	padding: 5px 0;
+}
+.jtouch-copyright a{
+	text-shadow: none !important;
+	color: #333 !important;
+	font-weight: normal !important;
+}
+/*@end*/
+
+
+/*@group Component Settings*/
+/* ReCaptcha */
+#recaptcha_area{
+	background-color: #F2F1EE;
+	border-radius: 5px;
+}
+#recaptcha_area td{
+	background: none !important;
+}
+
+/* Google Stuffs */
+.googleadgoeshere{
+	display: block;
+	position: relative;
+	margin: 0 auto;
+}
+.googleadgoeshere::after{
+	clear: both;
+}
+#googleadgoeshere1,
+#googleadgoeshere2{
+	width: 100%;
+	text-align: center;
+	display: block;
+	margin-left: -14px;
+	margin-right: -14px;
+	min-height: 55px;
+}
+#googleadgoeshere1{}
+#googleadgoeshere2{
+	padding-top: 10px;
+}
+.youtube-player, .youtube{
+	width: 560px;
+	height: 315px;
+}
+/*@end*/
+
+/* @group MEDIA QUERY */
+/* Large desktop */
+@media (min-width: 1200px) {
+.visible-tablet,
+.visible-phone,
+.hidden-desktop{
+	display: none !important;
+}
+
+} /* < @media (min-width: 1200px) */
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+.visible-desktop,
+.visible-phone{
+	display: none !important;
+}
+
+} /* < @media (min-width: 768px) and (max-width: 979px) */
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+.youtube-player, .youtube{
+	width: 380px;
+	height: 223px;
+}
+
+.visible-desktop,
+.hidden-desktop,
+.visible-tablet,
+.hidden-tablet{
+	display: none !important;
+}
+
+
+} /* < @media (max-width: 767px) */
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+.youtube-player, .youtube{
+	width: 300px;
+	height: 182px;
+}
+
+.hidden-phone{
+	display: none;
+}
+
+} /* < @media (max-width: 480px) */ 
+
+/* @end MEDIA QUERY*/

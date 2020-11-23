@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>System - JTouch Mobile Controller</name>
+	<author>JTouchMobile.com</author>
+	<authorEmail>proservices@jtouchmobile.com</authorEmail>
+	<authorUrl>http://www.jtouchmobile.com</authorUrl>
+	<copyright>Copyright 2011-2013 JTouchMobile.com. All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<creationDate>April 2013</creationDate>
+	<version>2.5.27</version>
+	<description>PLG_SYSTEM_JTOUCHMOBILE_DESCRIPTION</description>
+	<files>
+		<filename plugin="jtouchmobile">jtouchmobile.php</filename>
+		<filename>jtouchmobile.script.php</filename>
+		<filename>mdetect.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<scriptfile>jtouchmobile.script.php</scriptfile>
+	<languages folder="languages">
+		<language tag="en-GB">en-GB.plg_system_jtouchmobile.ini</language>
+		<language tag="en-GB">en-GB.plg_system_jtouchmobile.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="jt-mobile" label="JTOUCH25_PLUGIN_MOBILE_PANEL">
+				<field name="version" type="spacer" label="Version: 2.5.27" />
+				<field name="jtouch_mobile_switch_enabled" type="radio" default="1"
+					label="JTOUCH25_PLUGIN_ENABLE_SWITCHER"
+					description="JTOUCH25_PLUGIN_ENABLE_SWITCHER_DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="jtouch_mobile_template" type="folderlist" 
+					label="JTOUCH25_PLUGIN_TEMPLATE" 
+					description="JTOUCH25_PLUGIN_TEMPLATE_DESC"
+					directory="../templates" filter="" exclude="" stripext="" 
+					default="jtouch25" />
+				
+				<field name="jtouch_mobile_include_tablets" type="radio" default="0"
+					label="JTOUCH25_PLUGIN_ENABLE_TABLET"
+					description="JTOUCH25_PLUGIN_ENABLE_TABLET_DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+
+				<field name="spacer1" type="spacer" hr="true" />
+				<field name="jtouch_default_mobile_menu" type="radio" default="0" label="JTOUCH25_PLUGIN_DEFAULT_MENU" description="JTOUCH25_PLUGIN_DEFAULT_MENU_DESC">
+					<option value="0">JTOUCH25_PLUGIN_DEFAULT_MENU_AS_DESKTOP</option>
+					<option value="1">JTOUCH25_PLUGIN_DEFAULT_MENU_CUSTOM</option>
+				</field>
+				<field name="jtouch_default_mobile_menu_item" type="menuitem" default="0" state="1" label="-" description="JTOUCH25_PLUGIN_DEFAULT_MENU_CUSTOM_DESC" />
+				
+			</fieldset>
+			
+			<fieldset name="jtouch25" label="JTOUCH25_PLUGIN_FOR_JT_PANEL">
+				<field name="jtouch_mobile_head_off" type="radio" default="0" label="JTOUCH25_PLUGIN_JT_SCRIPT" description="JTOUCH25_PLUGIN_JT_SCRIPT_DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="jtouch_mobile_remove_mootools" type="radio" default="0" label="JTOUCH25_PLUGIN_MOOTOOLS" description="JTOUCH25_PLUGIN_MOOTOOLS_DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+			</fieldset>
+			
+			<fieldset name="cache" label="JTOUCH25_PLUGIN_CACHE_PANEL">
+				<field name="jtouch_mobile_cache" type="radio" default="1"
+					label="JTOUCH25_PLUGIN_ENABLE_CACHE"
+					description="JTOUCH25_PLUGIN_ENABLE_CACHE_DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field	name="jtouch_mobile_browsercache" type="radio" default="0" label="JTOUCH25_PLUGIN_BROWSER_CACHE" description="JTOUCH25_PLUGIN_BROWSER_CACHE_DESC">
+					<option value="0">No</option>
+					<option	value="1">Yes</option>
+				</field>
+				
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>

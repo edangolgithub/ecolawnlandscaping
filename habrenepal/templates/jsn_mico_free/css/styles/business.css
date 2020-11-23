@@ -1,0 +1,40 @@
+/**
+* @author    JoomlaShine.com http://www.joomlashine.com
+* @copyright Copyright (C) 2008 - 2011 JoomlaShine.com. All rights reserved.
+* @license   JoomlaShine.com Proprietary License
+*/
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 75%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#jsn-menu a,
+#jsn-menu span,
+.componentheading,
+.contentheading {
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+.front-page-blog h2.componentheading {
+/* color: antiquewhite; */
+font-size: 30px;
+/* font-stretch: ultra-expanded; */
+/* font-family: arial; */
+letter-spacing: 2px;
+}
+.jsn-article h2.contentheading
+{
+text-align:center;
+
+}
+.jsn-article a img
+{
+border: outset 2px #81DF76;
+
+}
+

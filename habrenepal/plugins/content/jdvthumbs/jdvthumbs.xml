@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="plugin"
+	version="2.5"
+	group="content"
+	method="upgrade">
+	
+	<name>Content - Thumbs</name>
+	<author>Nikolay S.</author>
+	<creationDate>08.10.2014</creationDate>
+	<copyright>Copyright (C) 2005 - 2008 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>nsemkin@yandex.ru</authorEmail>
+	<authorUrl>jdevelop.info</authorUrl>
+	<version>0.5.13</version>
+	<description>PLG_JDVTHUMBS_DESC</description>
+	<files>
+		<filename plugin="jdvthumbs">jdvthumbs.php</filename>
+		<filename>index.html</filename>
+		<filename>thumb.class.php</filename>
+		<filename>thumb2.class.php</filename>
+		<filename>helper.php</filename>
+	</files>
+	<media destination="plg_content_jdvthumbs">
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>slimbox</folder>
+		<filename>index.html</filename>
+	</media>
+	<languages folder="lang">
+		<language tag="en-GB">en-GB.plg_content_jdvthumbs.ini</language>
+		<language tag="ru-RU">ru-RU.plg_content_jdvthumbs.ini</language>
+		<language tag="fr-FR">fr-FR.plg_content_jdvthumbs.ini</language>
+		<language tag="de-DE">de-DE.plg_content_jdvthumbs.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="target" type="radio" default="all" label="PLG_JDVTHUMBS_THUMBNAILS_IMAGES"  description = "PLG_JDVTHUMBS_THUMBNAILS_IMAGES_DESC">
+					<option value="all">All</option>
+					<option value="class">By Class</option>
+				</field>
+				<field name="thumbsFolder" type="text" default="images/plg_jdvthumbs" label="PLG_JDVTHUMBS_THUMBS_FOLDER" description="PLG_JDVTHUMBS_THUMBS_FOLDER" />
+				<field name="quality" type="text" default="90" label="PLG_JDVTHUMBS_QUALITY" description="PLG_JDVTHUMBS_QUALITY" />
+				<field name="method" type="list" default="resampled" label="PLG_JDVTHUMBS_METHOD"  description="PLG_JDVTHUMBS_METHOD">
+					<option value="resized">Resized</option>
+					<option value="resampled">Resampled</option>
+				</field>
+				
+				<field name="thumbArea" type="radio" default="top" label="PLG_JDVTHUMBS_THUMB_AREA" description="PLG_JDVTHUMBS_THUMB_AREA">
+					<option value="top">Top</option>
+					<option value="middle">Middle</option>
+				</field>
+				
+				<field name="notApplyto" type="text" default="nothumb" label="PLG_JDVTHUMBS_NOT_APPLY_TO" description="PLG_JDVTHUMBS_NOT_APPLY_TO_DESC" />
+
+				<field name="applyto" type="text" default="thumb" label="PLG_JDVTHUMBS_APPLY_TO" description="PLG_JDVTHUMBS_APPLY_TO_DESC" />
+				
+				<field name="loadcss" type="radio" default="0" label="PLG_JDVTHUMBS_CSS_FILE" description="PLG_JDVTHUMBS_CSS_FILE">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				<field name="loadSlimbox" type="radio" default="1" label="PLG_JDVTHUMBS_SLIMBOX" description="PLG_JDVTHUMBS_SLIMBOX">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				
+				
+				<field name="lightboxHandler" type="text" default="rel" label="PLG_JDVTHUMBS_LIGHTBOXHANDLER" description="PLG_JDVTHUMBS_LIGHTBOXHANDLER_DESC" />
+				<field name="attribValue" type="text" default="lightbox" label="PLG_JDVTHUMBS_ATTRIBVALUE" description="PLG_JDVTHUMBS_ATTRIBVALUE_DESC" />
+				
+				
+				
+
+				
+				<field name="addarticleoption" type="list" default="slimbox" label="PLG_JDVTHUMBS_ADDARTICLEOPTION" description="PLG_JDVTHUMBS_ADDARTICLEOPTION_DESC">
+					<option value="0">JNo</option>
+					<option value="slimbox">Slimbox</option>
+					<option value="widgetkit">Widgetkit</option>
+					<option value="fancybox">Fancybox</option>
+				</field>
+				
+				<field name="notumbSize" type="text" default="100" label="PLG_JDVTHUMBS_NOTUMB_SIZE" description="PLG_JDVTHUMBS_NOTUMB_SIZE_DESC" />
+				
+				
+				
+				<field name="thumbIntroImage" type="list" default="1" label="PLG_JDVTHUMBS_THUMBINTROIMAGE"  description="PLG_JDVTHUMBS_THUMBINTROIMAGE">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+					<option value="2">PLG_JDVTHUMBS_FROM_IMAGE_FULLTEXT</option>
+				</field>
+				
+				<field name="skipOuter" type="radio" default="1" label="PLG_JDVTHUMBS_SKIPOUTER" description="PLG_JDVTHUMBS_SKIPOUTER">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				
+				<field name="skipGIF" type="radio" default="1" label="PLG_JDVTHUMBS_SKIPGIF" description="PLG_JDVTHUMBS_SKIPGIF">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				
+			</fieldset>
+				
+				
+		
+			
+			<fieldset name="PLG_JDVTHUMBS_DEFAULT">
+				
+				<field name="defaultSetsFrom" type="list" default="category" label="PLG_JDVTHUMBS_SETSFROM"  description="PLG_JDVTHUMBS_SETSFROM_DESC">
+					<option value="category">Myself</option>
+					<option value="featured">Featured</option>
+					<option value="article">Article</option>
+				</field>
+				<field name="widthDefault" type="text" default="200" label="PLG_JDVTHUMBS_WIDTH" description="PLG_JDVTHUMBS_WIDTH" />
+				<field name="heightDefault" type="text" default="200" label="PLG_JDVTHUMBS_HEIGHT" description="PLG_JDVTHUMBS_HEIGHT" />
+				<field name="sizeonDefault" type="list" default="both" label="PLG_JDVTHUMBS_THE_SIZE_ON"  description="PLG_JDVTHUMBS_THE_SIZE_ON">
+					<option value="width">Width</option>
+					<option value="height">Height</option>
+					<option value="both">Both</option>
+					<option value="crop">Crop</option>
+					<option value="none">None</option>
+				</field>
+				<field name="mediaDefault" type="list" default="article" label="PLG_JDVTHUMBS_MEDIA"  description="PLG_JDVTHUMBS_MEDIA">
+					<option value="slimbox">Lightbox</option>
+					<option value="window">New Window</option>
+					<option value="article">Article</option>
+					<option value="none">None</option>
+				</field>
+				
+	
+			</fieldset>	
+				
+
+			<fieldset name="PLG_JDVTHUMBS_ARTICLES">	
+				
+				<field name="articleSetsFrom" type="list" default="article" label="PLG_JDVTHUMBS_SETSFROM"  description="PLG_JDVTHUMBS_SETSFROM_DESC">
+					<option value="article">Myself</option>
+					<option value="category">Category</option>
+					<option value="featured">Featured</option>
+				</field>
+				
+				
+				<field name="widthForArticles" type="text" default="200" label="PLG_JDVTHUMBS_WIDTH" description="PLG_JDVTHUMBS_WIDTH" />
+				<field name="heightForArticles" type="text" default="200" label="PLG_JDVTHUMBS_HEIGHT" description="PLG_JDVTHUMBS_HEIGHT" />
+				<field name="sizeonForArticles" type="list" default = "both" label="PLG_JDVTHUMBS_THE_SIZE_ON"  description="PLG_JDVTHUMBS_THE_SIZE_ON">
+					<option value="width">Width</option>
+					<option value="height">Height</option>
+					<option value="both">Both</option>
+					<option value="crop">Crop</option>
+					<option value="stylesize">Stylesize</option>
+					<option value="none">None</option>
+				</field>
+				<field name="mediaForArticles" type="list" default="slimbox" label="PLG_JDVTHUMBS_MEDIA"  description="PLG_JDVTHUMBS_MEDIA">
+					<option value="slimbox">Lightbox</option>
+					<option value="window">New Window</option>
+					<option value="none">None</option>
+				</field>
+				
+
+				
+			</fieldset>	
+				
+
+				
+			<fieldset name="PLG_JDVTHUMBS_FEATURED">	
+				
+
+				<field name="featuredSetsFrom" type="list" default="category" label="PLG_JDVTHUMBS_SETSFROM"  description="PLG_JDVTHUMBS_SETSFROM_DESC">
+					<option value="featured">Myself</option>
+					<option value="category">Category</option>
+					<option value="article">Article</option>
+				</field>
+				
+				<field name="widthForFeatured" type="text" default="200" label="PLG_JDVTHUMBS_WIDTH" description="PLG_JDVTHUMBS_WIDTH" />
+				<field name="heightForFeatured" type="text" default="200" label="PLG_JDVTHUMBS_HEIGHT" description="PLG_JDVTHUMBS_HEIGHT" />
+				<field name="sizeonForFeatured" type="list" default = "both" label="PLG_JDVTHUMBS_THE_SIZE_ON" description="PLG_JDVTHUMBS_THE_SIZE_ON">
+					<option value="width">Width</option>
+					<option value="height">Height</option>
+					<option value="both">Both</option>
+					<option value="crop">Crop</option>
+					<option value="none">None</option>
+				</field>
+				<field name="mediaForFeatured" type="list" default="article" label="PLG_JDVTHUMBS_MEDIA"  description="PLG_JDVTHUMBS_MEDIA">
+					<option value="slimbox">Lightbox</option>
+					<option value="window">New Window</option>
+					<option value="article">Article</option>
+					<option value="none">None</option>
+				</field>
+				
+
+				
+			</fieldset>	
+			
+			
+			
+			<fieldset name="PLG_JDVTHUMBS_MODCUSTOM">	
+				
+
+				<field name="thumbModcustom" type="radio" default="0" label="PLG_JDVTHUMBS_THUMBMODCUSTOM" description="PLG_JDVTHUMBS_THUMBMODCUSTOM">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				
+				<field name="widthForModCustom" type="text" default="200" label="PLG_JDVTHUMBS_WIDTH" description="PLG_JDVTHUMBS_WIDTH" />
+				<field name="heightForModCustom" type="text" default="200" label="PLG_JDVTHUMBS_HEIGHT" description="PLG_JDVTHUMBS_HEIGHT" />
+				<field name="sizeonForModCustom" type="list" default = "both" label="PLG_JDVTHUMBS_THE_SIZE_ON"  description="PLG_JDVTHUMBS_THE_SIZE_ON">
+					<option value="width">Width</option>
+					<option value="height">Height</option>
+					<option value="both">Both</option>
+					<option value="crop">Crop</option>
+					<option value="none">None</option>
+				</field>
+				<field name="mediaForModCustom" type="list" default="slimbox" label="PLG_JDVTHUMBS_MEDIA"  description="PLG_JDVTHUMBS_MEDIA">
+					<option value="slimbox">Lightbox</option>
+					<option value="window">New Window</option>
+					<option value="none">None</option>
+				</field>
+				
+
+				
+			</fieldset>	
+				
+
+			<fieldset name="PLG_JDVTHUMBS_ADVANCED_THUMBNAILS">		
+				
+				<field name="forItemid" type="textarea" default="" label="PLG_JDVTHUMBS_FOR_ITEMID" cols="30" rows="10" description="PLG_JDVTHUMBS_FOR_ITEMID_DESC" />
+				
+				<field name="typeBigThumbs" type="radio" default="originale" label="PLG_JDVTHUMBS_THE_BIG_IMAGES"  description="PLG_JDVTHUMBS_THE_BIG_IMAGES">
+					<option value="originale">Originale</option>
+					<option value="thumb">Thumb</option>
+				</field>
+				<field name="qualityForBigThumb" type="text" default="100" label="PLG_JDVTHUMBS_QUALITY" description="PLG_JDVTHUMBS_QUALITY" />
+				<field name="widthForBigThumb" type="text" default="800" label="PLG_JDVTHUMBS_WIDTH" description="PLG_JDVTHUMBS_WIDTH" />
+				<field name="heightForBigThumb" type="text" default="600" label="PLG_JDVTHUMBS_HEIGHT" description="PLG_JDVTHUMBS_HEIGHT" />
+				
+				
+				
+				
+				<field name="addLogoImage" type="radio" default="0" label="PLG_JDVTHUMBS_ADD_THE_LOGO_IMAGE" description="PLG_JDVTHUMBS_ADD_THE_LOGO_IMAGE">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				<field name="logoPosition" type="list" default="lefttop" label="PLG_JDVTHUMBS_LOGO_POSITION"  description = "Logo Position DESC">
+					<option value="lefttop">Left-Top</option>
+					<option value="righttop">Right-Top</option>
+					<option value="rightbottom">Right-Bottom</option>
+					<option value="leftbottom">Left-Bottom</option>
+				</field>
+				<field name="logoImage" type="text" default="images/powered_by.png" label="PLG_JDVTHUMBS_THE_LOGO_IMAGE" description="PLG_JDVTHUMBS_THE_LOGO_IMAGE" />
+			</fieldset>
+
+		</fields>
+	</config>
+</extension>

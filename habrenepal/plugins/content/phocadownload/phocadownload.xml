@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension group="content" method="upgrade" type="plugin" version="2.5.0">
+	<name>plg_content_phocadownload</name>
+	<creationDate>07/02/2012</creationDate>
+	<author>Jan Pavelka (www.phoca.cz)</author>
+	<authorEmail></authorEmail>
+	<authorUrl>www.phoca.cz</authorUrl>
+	<copyright>Jan Pavelka</copyright>
+	<license>GNU/GPL</license>
+	<version>2.1.6</version>
+	
+	<description>PLG_CONTENT_PHOCADOWNLOAD_DESCRIPTION</description>
+	
+	<files>
+		<folder>assets</folder>
+		<filename plugin="phocadownload">phocadownload.php</filename>
+		<filename >index.html</filename>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_content_phocadownload.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_content_phocadownload.sys.ini</language>
+	</languages>
+	
+	<administration>
+		<languages>
+			<language tag="en-GB">language/en-GB/en-GB.plg_content_phocadownload.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.plg_content_phocadownload.sys.ini</language>
+		</languages>
+	</administration>
+	
+	<config>
+	
+	<fields name="params" addpath="/administrator/components/com_phocamaps/models/fields">
+		
+		<fieldset name="basic">
+		
+		
+		<field name="icon_size" type="list" default="32" label="PLG_CONTENT_PHOCADOWNLOAD_ICON_SIZE_LABEL" description="PLG_CONTENT_PHOCADOWNLOAD_ICON_SIZE_DESC">
+			<option value="64">64</option>
+			<option value="32">32</option>
+			<option value="16">16</option>
+		</field>
+		
+		
+
+		</fieldset>
+	</fields>
+	</config>
+	
+	
+
+</extension>

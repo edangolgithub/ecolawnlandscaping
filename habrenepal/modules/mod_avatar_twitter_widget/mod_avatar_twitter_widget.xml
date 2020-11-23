@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" method="upgrade">
+    <name>Avatar Twitter Widget</name>
+    <author>Nam Chung Tran</author>
+    <version>2.0.0</version>
+	<creationDate>April 2012</creationDate>
+	<copyright>JoomAvatar.com</copyright>
+	<license>License GNU General Public License version 2 or later</license>
+	<authorEmail>chungtn2910@gmail.com</authorEmail>
+	<authorUrl>www.joomavatar.com</authorUrl>
+	<edition>Free</edition>
+    <description>AVATAR_TWITTER_WIDGET_DESC</description>
+    <files>
+        <filename module="mod_avatar_twitter_widget">mod_avatar_twitter_widget.php</filename>
+        <filename>index.html</filename>
+        <filename>mod_avatar_twitter_widget.xml</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+        <folder>assets</folder>
+        <folder>elements</folder>
+    </files>
+    <languages>
+		<language tag="en-GB">en-GB.mod_avatar_twitter_widget.ini</language>
+		<language tag="en-GB">en-GB.mod_avatar_twitter_widget.sys.ini</language>
+	</languages>
+     <config>
+    	<fields name="params">
+    		<fieldset name="moduleSt" label="AVATAR_TWITTER_MODULE_SETTING">
+    			<field type="spacer" name="&lt;div style=&quot;color:#fff; font-size:12px; font-weight:bold; padding:3px; margin:0; text-align:center; background:#333333;&quot;&gt;Widget\Button&lt;/div&gt;" />
+    			<field name="moduleclass_sfx" type="text"  default="" label="AVATAR_SUFFIX" description="" />
+    			<field name="display" type="radio" default="widget" label="AVATAR_TWITTER_SHOW" description="AVATAR_TWITTER_SHOW_DESC">	
+					<option value="tweetbtn">AVATAR_TWITTER_TWEET_BUTTON</option>
+					<option value="followbtn">AVATAR_TWITTER_FOLLOW_BUTTON</option>
+					<option value="widget">AVATAR_TWITTER_WIDGET</option>
+				</field>
+				<field name="cr" type="hidden" default="true" label="AVATAR_TWITTER_COPYRIGHT" description="AVATAR_TWITTER_COPYRIGHT_DESC">	
+					<option value="true">AVATAR_TWITTER_YES</option>
+					<option value="false">AVATAR_TWITTER_NO</option>
+				</field>
+    		</fieldset>
+    		<fieldset name="tweetBtnSt" label="AVATAR_TWITTER_TWEET_BUTTON_SETTING">
+    			<field name="tweetBtnType" type="radio" default="twitter-share-button" label="AVATAR_TWITTER_TWEET_BUTTON_TYPE" description="AVATAR_TWITTER_TWEET_BUTTON_TYPE_DESC">	
+					<option value="twitter-hashtag-button">AVATAR_TWITTER_HASHTAG</option>
+					<option value="twitter-mention-button">AVATAR_TWITTER_MENTION</option>
+					<option value="twitter-share-button">AVATAR_TWITTER_SHARE</option>
+				</field>
+    			<field name="tweetBtnSize" type="radio" default="medium" label="AVATAR_TWITTER_BUTTON_SIZE" description="AVATAR_TWITTER_BUTTON_SIZE_DESC">	
+					<option value="medium">AVATAR_TWITTER_MEDIUM</option>
+					<option value="large">AVATAR_TWITTER_LARGE</option>
+				</field>
+				<field name="tweetCount" type="radio" default="none" label="AVATAR_TWITTER_TWEET_BUTTON_COUNT" description="AVATAR_TWITTER_TWEET_BUTTON_COUNT_DESC">	
+					<option value="none">AVATAR_TWITTER_NONE</option>
+					<option value="horizontal">AVATAR_TWITTER_HORIZONTAL</option>
+					<option value="vertical">AVATAR_TWITTER_VERTICAL</option>
+				</field>
+				<field name="tweetRelated" type="text" default="" label="AVATAR_TWITTER_TWEET_BUTTON_RELATED" size="20" description="AVATAR_TWITTER_TWEET_BUTTON_RELATED_DESC"/>
+				<field name="tweetUrl" type="text" default="" label="AVATAR_TWITTER_TWEET_BUTTON_URL" size="20" description="AVATAR_TWITTER_TWEET_BUTTON_URL_DESC"/>
+				<field name="tweetVia" type="text" default="" label="AVATAR_TWITTER_TWEET_BUTTON_VIA" size="20" description="AVATAR_TWITTER_TWEET_BUTTON_VIA_DESC"/>
+				<field type="spacer" name="&lt;div style=&quot;color:#fff; font-size:12px; font-weight:bold; padding:3px; margin:0; text-align:center; background:#333333;&quot;&gt;Hashtag Settings&lt;/div&gt;" />
+				<field name="tweetHashtag" type="text" default="Hashtag" label="AVATAR_TWITTER_TWEET_BUTTON_HASHTAG" size="20" description="AVATAR_TWITTER_TWEET_BUTTON_HASHTAG_DESC"/>
+				<field name="tweetHashtagTxt" type="text" default="Text" label="AVATAR_TWITTER_TWEET_BUTTON_HASHTAG_TEXT" size="20" description="AVATAR_TWITTER_TWEET_BUTTON_HASHTAG_TEXT_DESC"/>
+    			<field type="spacer" name="&lt;div style=&quot;color:#fff; font-size:12px; font-weight:bold; padding:3px; margin:0; text-align:center; background:#333333;&quot;&gt;Mention Settings&lt;/div&gt;" />
+    			<field name="tweetMentionNamge" type="text" default="screen_name" label="AVATAR_TWITTER_TWEET_BUTTON_MENTION_NAME" size="20" description="AVATAR_TWITTER_TWEET_BUTTON_MENTION_NAME_DESC"/>
+    		</fieldset>
+    		<fieldset name="followBtnSt" label="AVATAR_TWITTER_FOLLOW_BUTTON_SETTING">
+    			<field name="followBtn" type="text" default="Twitter_name" label="AVATAR_TWITTER_FOLLOW_BUTTON_USER" size="20" description="AVATAR_TWITTER_FOLLOW_BUTTON_USER_DESC"/>
+    			<field name="followWidth" type="text" default="" label="AVATAR_TWITTER_FOLLOW_BUTTON_WIDTH" size="4" description="AVATAR_TWITTER_FOLLOW_BUTTON_WIDTH_DESC"/>
+    			<field name="followCount" type="radio" default="false" label="AVATAR_TWITTER_FOLLOW_BUTTON_COUNT" description="AVATAR_TWITTER_FOLLOW_BUTTON_COUNT_DESC">	
+					<option value="true">AVATAR_TWITTER_YES</option>
+					<option value="false">AVATAR_TWITTER_NO</option>
+				</field>
+				<field name="followBtnSize" type="radio" default="medium" label="AVATAR_TWITTER_BUTTON_SIZE" description="AVATAR_TWITTER_BUTTON_SIZE_DESC">	
+					<option value="medium">AVATAR_TWITTER_MEDIUM</option>
+					<option value="large">AVATAR_TWITTER_LARGE</option>
+				</field>
+				<field name="followScreenName" type="radio" default="true" label="AVATAR_TWITTER_FOLLOW_BUTTON_SCREEN" description="AVATAR_TWITTER_FOLLOW_BUTTON_SCREEN_DESC">	
+					<option value="true">AVATAR_TWITTER_YES</option>
+					<option value="false">AVATAR_TWITTER_NO</option>
+				</field>
+				<field name="followAlign" type="radio" default="left" label="AVATAR_TWITTER_FOLLOW_BUTTON_ALIGN" description="AVATAR_TWITTER_FOLLOW_BUTTON_ALIGN_DESC">	
+					<option value="left">AVATAR_TWITTER_LEFT</option>
+					<option value="right">AVATAR_TWITTER_RIGHT</option>
+				</field>
+    		</fieldset>
+    		<fieldset name="widgetSt" label="AVATAR_TWITTER_SETTINGS" addfieldpath="/modules/mod_avatar_twitter_widget/elements">
+				<field name="widgetId" type="text" default="" label="AVATAR_TWITTER_WIDGET_ID" size="20" description="AVATAR_TWITTER_WIDGET_ID_DESC"/>
+			</fieldset>
+    	</fields>	
+    </config>
+</extension>

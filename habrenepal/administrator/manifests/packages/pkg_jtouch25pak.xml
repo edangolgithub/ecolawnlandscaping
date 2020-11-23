@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="2.5">
+	<name>JTouch Mobile Solution For Joomla 2.5</name>
+	<packagename>jtouch25pak</packagename>
+	<author>JTouchMobile.com</author>
+	<authorEmail>proservices@jtouchmobile.com</authorEmail>
+	<authorUrl>http://www.jtouchmobile.com</authorUrl>
+	<copyright>Copyright 2011-2013 JTouchMobile.com. All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<creationDate>24 April 2013</creationDate>
+	<version>2.5.27</version>
+	<description>
+		<![CDATA[
+		<div class="clr"></div>
+		<div style="font-weight:normal;color:#333;">
+			<p><img src="../templates/jtouch25/jtouchmobile/welcome.png" /></p>
+			<p><strong>JTouch Mobile Solution for Joomla 2.5 - Template and plugin are successfully installed!</strong></p>
+			<p><em>Thank you for choosing JTouch to mobilize your Joomla! website.</em></p>
+			<p><strong>Your next steps are:</strong></p>
+			<ol>
+				<li>Enable JTouch Mobile Controller plugin - <a href="index.php?option=com_plugins&view=plugins&filter_search=jtouch" target="_blank">Click here</a></li>
+				<li>Customize the mobile view via the JTouch Mobile template - <a href="index.php?option=com_templates&view=styles&filter_search=jtouch" target="_blank">Click here </a></li>
+			</ol>
+			<p>If you have any questions, please visit our <a href="http://www.jtouchmobile.com/forum" target="_blank">Support Forum</a>.</p>
+			<p>Copyright &copy; 2011-2013 <a href="http://www.jtouchmobile.com/" target="_blank">JTouchMobile.com</a>. All rights reserved.</p>
+		</div>
+		]]>
+	</description>
+	<files folder="packages">
+		<file type="template" 	id="jtouch25" >template-jtouch25.zip</file>
+		<file type="plugin"		id="jtouchmobile" group="system">plugin-jtouchmobile.zip</file>
+	</files>
+	<updateservers>
+		<server type="extension" priority="1" name="Jtouch Mobile Template">http://www.jtouchmobile.com/updates/jtouch25package.xml</server>
+    </updateservers>
+</extension>

@@ -1,0 +1,174 @@
+#jslikeboxsidebarleft {
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    left: 0px;
+    list-style: none;
+	z-index: 9999;
+}
+
+#jslikeboxsidebarright {
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    right: 0px;
+    list-style: none;
+	z-index: 9999;
+}
+
+#jslikeboxsidebarleft {
+    width: 40px;
+		margin-bottom: 5px;		    
+}
+
+#jslikeboxsidebarright {
+    width: 40px;
+		margin-bottom: 5px;		    
+}
+
+.jslikeboxsidebarbuttonright {
+margin-left: 8px ;
+}
+
+.jslikeboxsidebarbuttonleft {
+margin-left: -305px;
+}
+
+#likebox iframe {
+margin: -1px -4px 0 -4px;
+width: 288px;
+}
+
+#jslikeboxsidebarleft #likebox-frame-lightr {
+   -webkit-border-bottom-right-radius: 10px;
+-webkit-border-top-right-radius: 10px;
+-moz-border-radius-bottomright: 10px;
+-moz-border-radius-topright: 10px;
+border-bottom-right-radius: 10px;
+border-top-right-radius: 10px;
+}
+
+#jslikeboxsidebarright #likebox-frame-lightr {
+   -webkit-border-bottom-left-radius: 10px;
+-webkit-border-top-left-radius: 10px;
+-moz-border-radius-bottomleft: 10px;
+-moz-border-radius-topleft: 10px;
+border-bottom-left-radius: 10px;
+border-top-left-radius: 10px;
+}
+
+#jslikeboxsidebarleft #likebox-frame-darkr {
+   -webkit-border-bottom-right-radius: 10px;
+-webkit-border-top-right-radius: 10px;
+-moz-border-radius-bottomright: 10px;
+-moz-border-radius-topright: 10px;
+border-bottom-right-radius: 10px;
+border-top-right-radius: 10px;
+}
+
+#jslikeboxsidebarright #likebox-frame-darkr {
+   -webkit-border-bottom-left-radius: 10px;
+-webkit-border-top-left-radius: 10px;
+-moz-border-radius-bottomleft: 10px;
+-moz-border-radius-topleft: 10px;
+border-bottom-left-radius: 10px;
+border-top-left-radius: 10px;
+}
+
+#likebox-frame-lightr {
+min-height:119px;
+background-color:#f4f4f4;
+border:4px solid #cccccc;
+position: relative;
+}
+
+#likebox-frame-lights {
+min-height:119px;
+background-color:#f4f4f4;
+border:4px solid #cccccc;
+}
+
+#likebox-frame-darkr {
+min-height:119px;
+background-color:#333333;
+border:4px solid #cccccc;
+}
+
+
+#likebox-frame-darks {
+min-height:119px;
+background-color:#333333;
+border:4px solid #cccccc;
+}
+
+#likeboxbluestandardleft {
+background: url(../images/bluebutton.png) no-repeat right 20px;
+height: 109px;
+}
+
+#likeboxdarkstandardleft {
+background: url(../images/darkbutton.png) no-repeat right 20px;
+height: 109px;
+}
+
+#likeboxblueiconleft {
+background: url(../images/bluebutton1.png) no-repeat right 20px;
+height: 109px;
+}
+
+#likeboxdarkiconleft {
+background: url(../images/darkbutton1.png) no-repeat right 20px;
+height: 109px;
+}
+
+#likeboxbluearrowleft{
+background: url(../images/bluebuttonarrowleft.png) no-repeat right 20px;
+height: 109px;
+}
+#likeboxdarkarrowleft {
+background: url(../images/darkbuttonarrowleft.png) no-repeat right 20px;
+height: 109px;
+}
+
+#likeboxbluestandardright {
+background: url(../images/bluebutton.png) no-repeat left 20px;
+height: 109px;
+padding-left: 34px !important;
+}
+
+#likeboxdarkstandardright {
+background: url(../images/darkbutton.png) no-repeat left 20px;
+height: 109px;
+padding-left: 34px !important;
+}
+
+#likeboxblueiconright {
+background: url(../images/bluebutton1.png) no-repeat left 20px;
+height: 109px;
+padding-left: 34px !important;
+}
+
+#likeboxdarkiconright {
+background: url(../images/darkbutton1.png) no-repeat left 20px;
+height: 109px;
+padding-left: 34px !important;
+}
+
+#likeboxbluearrowright{
+background: url(../images/bluebuttonarrowright.png) no-repeat left 20px;
+height: 109px;
+padding-left: 34px !important;
+}
+#likeboxdarkarrowright {
+background: url(../images/darkbuttonarrowright.png) no-repeat left 20px;
+height: 109px;
+padding-left: 34px !important;
+}
+
+.ssupport a {
+position: absolute;
+text-indent: -8000px;
+}
+
+
+

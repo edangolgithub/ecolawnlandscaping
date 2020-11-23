@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="1.7"
+	client="site"
+	method="upgrade">
+	<name>Susnet Facebook Like Box</name>
+	<author>Susnet</author>
+	<creationDate>February 2012</creationDate>
+	<copyright>Copyright (C) 2012 Susnet. All rights reserved.</copyright>
+	<license>GNU General Public License</license>
+	<authorEmail>info@susnet.co.uk</authorEmail>
+	<authorUrl>www.susnet.co.uk</authorUrl>
+	<version>1.0.7</version>
+	<description><![CDATA[ <p><b>Susnet Facebook Like Box</b> - Version: 1.0.7 </p><p>Sidebar: Publish the module in any position on your template, hide the module title.</p><p>If you experience script conflicts try turning off the jQuery in the module options.</p><p>For more information please visit <a href="http://www.susnet.co.uk/" title="Susnet" targe="_blank">Susnet</a></p>
+	]]></description>
+	<files> 
+		<filename module="mod_susnet_likebox">mod_susnet_likebox.php</filename>
+		<folder>tmpl</folder>
+		<folder>js</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>css/style.css</filename>
+		<filename>images/bluebutton.png</filename>
+		<filename>images/bluebutton1.png</filename>
+		<filename>images/bluebuttonarrowleft.png</filename>
+		<filename>images/bluebuttonarrowright.png</filename>
+		<filename>images/darkbutton.png</filename>
+		<filename>images/darkbutton1.png</filename>
+		<filename>images/darkbuttonarrowleft.png</filename>
+		<filename>images/darkbuttonarrowright.png</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_susnet_likebox.ini</language>
+	</languages>
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_LIKEBOX" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+			<field
+					name="facebookid"
+					type="text"
+					default="http://www.facebook.com/platform"
+					label="Facebook Page URL"
+					description="Enter your full Facebook page URL including the http://, for example: http://www.facebook.com/platform">
+				</field>
+				
+				<field
+					name="sidebar"
+					type="list"
+					default="1"
+					label="Like Box Position"
+					description="Select if you want the Like Box floated to the side of the page">
+					<option
+						value="1">Sidebar</option>
+					<option
+						value="0">Standard</option>
+				</field>
+				
+				
+							<field
+					name="boxstyle"
+					type="list"
+					default="light"
+					label="Like Box Color Style"
+					description="Like Box color style">
+					<option
+						value="light">Light</option>
+					<option
+						value="dark">Dark</option>
+				</field>
+				
+					
+				</fieldset>
+				
+				<fieldset
+				name="sidebarsettings" label="Sidebar Position Settings">
+				<field
+					name="connections"
+					type="list"
+					default="235"
+					label="Profile Pictures"
+					description="How many fan profile pictures to display">
+					<option
+						value="87">None</option>
+					<option
+						value="160">5</option>
+					<option
+						value="235">10</option>
+					<option
+						value="310">15</option>
+					<option
+						value="385">20</option>
+					<option
+						value="455">25</option>
+					<option
+						value="530">30</option>
+				</field>
+				<field
+					name="facebookstream"
+					type="list"
+					default="300"
+					label="Show Stream"
+					description="Show or hide the stream">
+					<option
+						value="0">Hide</option>
+					<option
+						value="300">Show</option>
+				</field>
+			<field
+					name="jsleftright"
+					type="list"
+					default="left"
+					label="Sidebar Position"
+					description="Left or Right sidebar position">
+					<option
+						value="left">Left</option>
+					<option
+						value="right">Right</option>
+				</field>
+				<field
+					name="boxcorners"
+					type="list"
+					default="r"
+					label="Like Box Corner Style"
+					description="Like Box corner style">
+					<option
+						value="r">Round</option>
+					<option
+						value="s">Square</option>
+				</field>
+				<field
+					name="jsbutton"
+					type="list"
+					default="bluestandard"
+					label="Sidebar Button"
+					description="Pick a sidebar button">
+					<option
+						value="bluestandard">Blue Standard</option>
+					<option
+						value="blueicon">Blue Icon</option>
+					<option
+						value="bluearrow">Blue Arrow</option>
+						<option
+						value="darkstandard">Dark Standard</option>
+					<option
+						value="darkicon">Dark Icon</option>
+					<option
+						value="darkarrow">Dark Arrow</option>
+				</field>
+				<field
+					name="positiontop"
+					type="text"
+					default="10"
+					label="Top Position"
+					description="Like Box position from top in px">
+				</field>
+				
+						<field
+					name="openspeed"
+					type="list"
+					default="200"
+					label="Side Bar Open Speed"
+					description="Select the open speed for Like Box">
+					<option
+						value="800">Very Slow</option>
+					<option
+						value="600">Slow</option>
+					<option
+						value="400">medium</option>
+					<option
+						value="200">Fast</option>
+					<option
+						value="100">Very Fast</option>
+				</field>
+				
+					<field
+					name="closespeed"
+					type="list"
+					default="200"
+					label="Side Bar Close Speed"
+					description="Select the close speed for Like Box">
+					<option
+						value="800">Very Slow</option>
+					<option
+						value="600">Slow</option>
+					<option
+						value="400">medium</option>
+					<option
+						value="200">Fast</option>
+					<option
+						value="100">Very Fast</option>
+				</field>
+				
+				<field
+					name="jquery"
+					type="list"
+					default="1"
+					label="jQuery"
+					description="If you're experiencing script conflicts, try setting this option to off.">
+					<option
+						value="1">On</option>
+					<option
+						value="0">Off</option>
+				</field>
+				
+				</fieldset>
+				
+				<fieldset
+				name="standardsettings" label="Standard Position Settings">
+				<field
+					name="standardwidth"
+					type="text"
+					default="292"
+					label="Width"
+					description="Like Box width in px">
+				</field>
+				<field
+					name="standardheight"
+					type="text"
+					default="292"
+					label="Height"
+					description="Like Box height in px">
+				</field>
+					<field
+					name="standardprofiles"
+					type="text"
+					default="10"
+					label="Profile Pictures"
+					description="Number of fan profile pictures to display">
+				</field>
+				<field
+					name="facebookstreamstandard"
+					type="list"
+					default="300"
+					label="Show Stream"
+					description="Show or hide the stream">
+					<option
+						value="0">Hide</option>
+					<option
+						value="300">Show</option>
+				</field>
+				</fieldset>
+				
+					
+			<fieldset
+				name="advanced">
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static">
+					<option
+						value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,21 @@
+<?if(isset($Message) and $Message!=''):?>
+	<table align="center" width="80%">
+		<tr><td>
+			<br>
+			<?echo $Message;?>
+			
+		</td></tr>
+	</table>
+<?endif;?>
+
+<?if(isset($ErrorMessage) and $ErrorMessage!=""):?>
+	<table align="center" width="80%">
+		<tr><td>
+			<font size="3" color="#FF0000"><b><i>Form Error !!!</i></b></font>
+			<hr size=1>
+			<font size="2" color="#FF0000"><?echo $ErrorMessage;?></font>
+			<hr size=1>
+		</td></tr>
+	</table>
+    <br>
+<?endif;?>

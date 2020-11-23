@@ -1,0 +1,7 @@
+.jtouch-article-list{}
+.jtouch-article-list a{font-weight:normal !important;}
+.jtouch-article-list .item{position: relative; padding-bottom: 10px; border-bottom: 1px dotted #D8D8D8; margin-bottom: 10px;}
+.jtouch-article-list .image{width: 60px;padding-right: 10px; float: left; display:table-cell;}
+.jtouch-article-list .image img{max-width: 60px;}
+.jtouch-article-list .content{padding-left: 70px;}
+.jtouch-article-list .content a{width:100%; display: block;}
